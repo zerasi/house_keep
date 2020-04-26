@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<typeAliases>
+		<typeAlias alias="admin" type="com.entity.Admin" />
+		<typeAlias alias="users" type="com.entity.Users" />
+		<typeAlias alias="article" type="com.entity.Article" />
+		<typeAlias alias="cate" type="com.entity.Cate" />
+		<typeAlias alias="goods" type="com.entity.Goods" />
+		<typeAlias alias="cart" type="com.entity.Cart" />
+		<typeAlias alias="orders" type="com.entity.Orders" />
+		<typeAlias alias="items" type="com.entity.Items" />
+		<typeAlias alias="topic" type="com.entity.Topic" />
+		<typeAlias alias="employ" type="com.entity.Employ" />
+		<typeAlias alias="allot" type="com.entity.Allot" />
+	</typeAliases>
+</configuration>
+
