@@ -31,9 +31,9 @@
 					<span>${article.title}</span>
 				</h3>
 				<div class="boxCenterList">
-					<center>
-						<img src="${article.image }" alt="" width="300" height="200" />
-					</center>
+					<div>
+						<img src="<%=path %>/showImg.action?imgurl=${article.image }" alt="" width="300" height="200" />
+					<div/>
 					${article.contents }
 				</div>
 			</div>

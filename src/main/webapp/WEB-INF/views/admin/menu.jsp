@@ -101,14 +101,6 @@
 				<li><a href="allot_getAllAllot.action"><span class="fa fa-caret-right"></span>订单分派信息列表</a></li>
 				<li><a href="allot_queryAllotByCond.action"><span class="fa fa-caret-right"></span>订单分派信息查询</a></li>
 			</ul></li>
-
-			<li><a data-target=".legal-menu12" class="nav-header" data-toggle="collapse">数据统计<i
-					class="fa fa-collapse"></i></a></li>
-			<li><ul class="legal-menu12 nav nav-list collapse">
-				<li><a href="adminline.jsp"><span class="fa fa-caret-right"></span>订单收入统计</a></li>
-				<li><a href="adminbar.jsp"><span class="fa fa-caret-right"></span>服务评价统计</a></li>
-				<li><a href="adminpie.jsp"><span class="fa fa-caret-right"></span>服务数量统计</a></li>
-			</ul></li>
 		</ul>
 	</div>
 </c:if>
@@ -185,13 +177,6 @@
 				<li><a href="allot_queryAllotByCond.action"><span class="fa fa-caret-right"></span>订单分派信息查询</a></li>
 			</ul></li>
 
-			<li><a data-target=".legal-menu12" class="nav-header" data-toggle="collapse">数据统计<i
-					class="fa fa-collapse"></i></a></li>
-			<li><ul class="legal-menu12 nav nav-list collapse">
-				<li><a href="adminline.jsp"><span class="fa fa-caret-right"></span>订单收入统计</a></li>
-				<li><a href="adminbar.jsp"><span class="fa fa-caret-right"></span>服务评价统计</a></li>
-				<li><a href="adminpie.jsp"><span class="fa fa-caret-right"></span>服务数量统计</a></li>
-			</ul></li>
 		</ul>
 	</div>
 </c:if>
