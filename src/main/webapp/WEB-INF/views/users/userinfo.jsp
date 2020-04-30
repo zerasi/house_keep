@@ -64,9 +64,9 @@
 							</tr>
 							<tr>
 								<td width="28%" align="right" bgcolor="#FFFFFF">性别：</td>
-								<td width="76%" align="left" bgcolor="#FFFFFF"><select name="sex" id="sex">
-									<option value="男">男</option>
-									<option value="女">女</option>
+								<td width="76%" align="left" bgcolor="#FFFFFF"><select name="sex" id="sex" >
+									<option value="男" <c:if test="${sessionScope.users.sex == '男'}">selected="selected"</c:if>>男</option>
+									<option value="女" <c:if test="${sessionScope.users.sex == '女'}">selected="selected"</c:if>>女</option>
 								</select></td>
 							</tr>
 							<tr>
