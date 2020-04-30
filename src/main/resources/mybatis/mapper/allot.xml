@@ -61,10 +61,10 @@
 		select a.* , b.ordercode , c.realname from allot a , orders b , employ
 		c where 1=1 and a.ordersid = b.ordersid and a.employid = c.employid
 		<if test="ordersid != null and '' != ordersid">
-			and a.ordersid like CONCAT('%', CONCAT(#{ordersid}, '%'))
+			and b.ordercode like CONCAT('%', CONCAT(#{ordersid}, '%'))
 		</if>
 		<if test="employid != null and '' != employid">
-			and a.employid like CONCAT('%', CONCAT(#{employid}, '%'))
+			and c.realname like CONCAT('%', CONCAT(#{employid}, '%'))
 		</if>
 		<if test="addtime != null and '' != addtime">
 			and a.addtime like CONCAT('%', CONCAT(#{addtime}, '%'))

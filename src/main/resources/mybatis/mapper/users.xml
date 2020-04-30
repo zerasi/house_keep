@@ -23,7 +23,7 @@
 	<update id="updateUsers" parameterType="users">
 		update users set username=#{username} , password=#{password} ,
 		realname=#{realname} , sex=#{sex} , birthday=#{birthday} ,
-		contact=#{contact} , regdate=#{regdate} where usersid=#{usersid}
+		contact=#{contact}  where usersid=#{usersid}
 	</update>
 	<!-- 按主键删除 DAO通过id调用此配置 -->
 	<delete id="deleteUsers" parameterType="String">

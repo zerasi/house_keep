@@ -5,7 +5,6 @@
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 <div class="userMenu">
-	<a href="usercenter.action"><img src="themes/xecmoban_haier2015/images/u2.gif" />用户中心</a>
 	<a href="userinfo.action"><img src="themes/xecmoban_haier2015/images/u2.gif" />用户信息</a>
 	<a href="prePwd.action"><img src="themes/xecmoban_haier2015/images/u3.gif" />修改密码</a>
 	<a href="showOrders.action"><img src="themes/xecmoban_haier2015/images/u3.gif" />我的订单</a>

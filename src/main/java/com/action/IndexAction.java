@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.UUID;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -262,14 +263,17 @@ public class IndexAction extends BaseAction {
 		if (this.getSession().getAttribute("userid") == null) {
 			return "redirect:/preLogin.action";
 		}
-		return "users/usercenter";
+		return "users/userinfo";
 	}
 
 	@RequestMapping("userinfo.action")
-	public String userinfo() {
+	public String userinfo(HttpServletRequest request, String msg) {
 		this.front();
 		if (this.getSession().getAttribute("userid") == null) {
 			return "redirect:/preLogin.action";
+		}
+		if (msg!=null && "ok".equals(msg)) {
+			request.setAttribute("msg", "修改成功！");
 		}
 		String userid = (String) this.getSession().getAttribute("userid");
 		this.getSession().setAttribute("users", this.usersService.getUsersById(userid));
@@ -283,7 +287,7 @@ public class IndexAction extends BaseAction {
 			return "redirect:/preLogin.action";
 		}
 		this.usersService.updateUsers(users);
-		return "redirect:/userinfo.action";
+		return "redirect:/userinfo.action?msg=ok";
 	}
 
 	// 添加产品到购物车

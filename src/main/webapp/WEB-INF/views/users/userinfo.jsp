@@ -80,7 +80,7 @@
 																					  id="contact" value="${sessionScope.users.contact }" /></td>
 							</tr>
 							<tr>
-								<td colspan="2" align="center" bgcolor="#FFFFFF"><input type="submit" class="bnt_blue_1"
+								<td colspan="2" align="center" bgcolor="#FFFFFF"><span style="color: red">${msg}</span><input type="submit" class="bnt_blue_1"
 																						style="border: none;" value="确认修改" /></td>
 							</tr>
 						</table>
