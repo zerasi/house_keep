@@ -53,25 +53,25 @@ public class PageHelper {
 		if ((Integer.parseInt(number) + 1) == 1) {
 			buffer.append("首页");
 		} else {
-			buffer.append("<a href=\"" + name + "/" + action + "?number=0" + path + "\">首页</a>");
+			buffer.append("<a href=\"" + name + "_" + action + "?number=0" + path + "\">首页</a>");
 		}
 		buffer.append("&nbsp;&nbsp;");
 		if ((Integer.parseInt(number) + 1) == 1) {
 			buffer.append("上一页");
 		} else {
-			buffer.append("<a href=\"" + name + "/" + action + "?number=" + (Integer.parseInt(number) - 1) + "" + path + "\">上一页</a>");
+			buffer.append("<a href=\"" + name + "_" + action + "?number=" + (Integer.parseInt(number) - 1) + "" + path + "\">上一页</a>");
 		}
 		buffer.append("&nbsp;&nbsp;");
 		if (maxPage <= (Integer.parseInt(number) + 1)) {
 			buffer.append("下一页");
 		} else {
-			buffer.append("<a href=\"" + name + "/" + action + "?number=" + (Integer.parseInt(number) + 1) + "" + path + "\">下一页</a>");
+			buffer.append("<a href=\"" + name + "_" + action + "?number=" + (Integer.parseInt(number) + 1) + "" + path + "\">下一页</a>");
 		}
 		buffer.append("&nbsp;&nbsp;");
 		if (maxPage <= (Integer.parseInt(number) + 1)) {
 			buffer.append("尾页");
 		} else {
-			buffer.append("<a href=\"" + name + "/" + action + "?number=" + (maxPage - 1) + "" + path + "\">尾页</a>");
+			buffer.append("<a href=\"" + name + "_" + action + "?number=" + (maxPage - 1) + "" + path + "\">尾页</a>");
 		}
 		String html = buffer.toString();
 		request.setAttribute("html", html);
@@ -113,25 +113,25 @@ public class PageHelper {
 		if ((Integer.parseInt(number) + 1) == 1) {
 			buffer.append("首页");
 		} else {
-			buffer.append("<a href=\"" + name + "/" + action + "?number=0" + path + "\">首页</a>");
+			buffer.append("<a href=\"" + name + "_" + action + "?number=0" + path + "\">首页</a>");
 		}
 		buffer.append("&nbsp;&nbsp;");
 		if ((Integer.parseInt(number) + 1) == 1) {
 			buffer.append("上一页");
 		} else {
-			buffer.append("<a href=\"" + name + "/" + action + "?number=" + (Integer.parseInt(number) - 1) + "" + path + "\">上一页</a>");
+			buffer.append("<a href=\"" + name + "_" + action + "?number=" + (Integer.parseInt(number) - 1) + "" + path + "\">上一页</a>");
 		}
 		buffer.append("&nbsp;&nbsp;");
 		if (maxPage <= (Integer.parseInt(number) + 1)) {
 			buffer.append("下一页");
 		} else {
-			buffer.append("<a href=\"" + name + "/" + action + "?number=" + (Integer.parseInt(number) + 1) + "" + path + "\">下一页</a>");
+			buffer.append("<a href=\"" + name + "_" + action + "?number=" + (Integer.parseInt(number) + 1) + "" + path + "\">下一页</a>");
 		}
 		buffer.append("&nbsp;&nbsp;");
 		if (maxPage <= (Integer.parseInt(number) + 1)) {
 			buffer.append("尾页");
 		} else {
-			buffer.append("<a href=\"" + name + "/" + action + "?number=" + (maxPage - 1) + "" + path + "\">尾页</a>");
+			buffer.append("<a href=\"" + name + "_" + action + "?number=" + (maxPage - 1) + "" + path + "\">尾页</a>");
 		}
 		String html = buffer.toString();
 		request.setAttribute("html", html);
